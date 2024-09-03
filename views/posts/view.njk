@@ -1,0 +1,47 @@
+{% extends 'partials/layout.njk' %}
+{% block title %}Add Post{% endblock %}
+{% block content %}
+    <form action="/posts/view/{{post.id}}" method="GET">
+        <div>
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <td>
+                        <p for="id">
+                            {{post.id}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Title</th>
+                    <td>
+                        <p for="id">
+                            {{post.title}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Content</th>
+                    <td>
+                        <p for="id">
+                            {{post.body}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Created at</th>
+                    <td>
+                        <p for="id">
+                            {{post.createdAt}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Updated at</th>
+                    <td>
+                        <p for="id">
+                            {{post.updatedAt}}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</form>
+{% endblock %}
